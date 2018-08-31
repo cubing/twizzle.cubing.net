@@ -16,25 +16,30 @@
 <select id="puzzleoptions">
 <option value="">custom</option>
 </select>
-Desc <input type=text id=desc value="c f 0.3333333333" size="50">
+<span id="data">Desc</span>
+<input type=text id=desc value="c f 0.3333333333" size="50">
+<input type=button id="scramble" value="Scramble">
+<input type=button id="reset" value="Reset">
+<select id="action">
+<option value="">Actions</option>
+<option value="ksolve">KSolve</option>
+<option value="export">Get Scramble</option>
+<option value="ss">Schreier-Sims</option>
+<option value="canon">Canon Seq</option>
+<option value="gap">GAP</option>
+<option value="svgcmd">SVG</option>
+</select>
+<input type=button id="help" value="Help"><br>
 <input type=checkbox id="threed"> 3D
 <input type=checkbox checked id="corners"> Corners
 <input type=checkbox checked id="edges"> Edges
 <input type=checkbox checked id="centers"> Centers
-<input type=button id="scramble" value="Scramble"><br>
-<input type=checkbox checked id="optimize"> Optimize
 <input type=checkbox id="blockmoves"> Block Moves
+<input type=checkbox checked id="optimize"> Optimize
 <input type=checkbox id="allmoves"> All Moves
 <input type=checkbox id="killori"> No Ori
-<input type=checkbox id="vertexmoves"> Vertex Moves
-<input type=button id="ksolve" value="KSolve"/>
-<input type=button id="export" value="Get Scramble"/>
-<input type=button id="ss" value="Schreier-Sims"/>
-<input type=button id="canon" value="Canon Seq"/>
-<input type=button id="gap" value="GAP"/>
-<input type=button id="svgcmd" value="SVG"/><br>
+<input type=checkbox id="vertexmoves"> Vertex Moves<br>
 Moves <input type=text id=algorithm value="" size=140><br>
 <twisty id="custom-example" initialization="custom"></twisty><br>
-<div id=data></div><br>
 </body>
 </html>
