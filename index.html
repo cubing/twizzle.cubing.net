@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twizzle</title>
+ <style>
+ twisty { width: 800px; height: 500px; display:block; }
+ </style>
+  <script src="./node_modules/alg/dist/alg.js"></script>
+  <script src="./node_modules/kpuzzle/dist/kpuzzle.js"></script>
+  <script src="./node_modules/twisty/dist/twisty.js"></script>
+  <script src="./node_modules/puzzle-geometry/dist/puzzle-geometry.js"></script>
+  <script src="./dist/twizzle.js"></script>
+  <link href="./node_modules/twisty/src/twisty.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<select id="puzzleoptions">
+<option value="">custom</option>
+</select>
+Desc <input type=text id=desc value="c f 0.3333333333" size="50">
+<input type=checkbox id="threed"> 3D
+<input type=checkbox checked id="corners"> Corners
+<input type=checkbox checked id="edges"> Edges
+<input type=checkbox checked id="centers"> Centers
+<input type=button id="scramble" value="Scramble"><br>
+<input type=checkbox checked id="optimize"> Optimize
+<input type=checkbox id="blockmoves"> Block Moves
+<input type=checkbox id="allmoves"> All Moves
+<input type=checkbox id="killori"> No Ori
+<input type=checkbox id="vertexmoves"> Vertex Moves
+<input type=button id="ksolve" value="KSolve"/>
+<input type=button id="export" value="Get Scramble"/>
+<input type=button id="ss" value="Schreier-Sims"/>
+<input type=button id="canon" value="Canon Seq"/>
+<input type=button id="gap" value="GAP"/>
+<input type=button id="svgcmd" value="SVG"/><br>
+Moves <input type=text id=algorithm value="" size=140><br>
+<twisty id="custom-example" initialization="custom"></twisty><br>
+<div id=data></div><br>
+</body>
+</html>
